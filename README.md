@@ -13,12 +13,16 @@
 
 ## Style Transfer
 - Clone from github: `git clone https://github.com/sunshineatnoon/LinearStyleTransfer`
-- Download pre-trained models from [google drive](https://drive.google.com/file/d/1H9T5rfXGlGCUh04DGkpkMFbVnmscJAbs/view?usp=sharing).
 - Uncompress to root folder :
 ```
 cd LinearStyleTransfer
-unzip models.zip
-rm models.zip
+unzip models_A.zip
+unzip models_B.zip
+mkdir models
+mv models_A/* models/
+mv models_B/* models/
+rm models_A.zip
+rm models_B.zip
 ```
 
 #### Artistic style transfer

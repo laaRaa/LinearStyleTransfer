@@ -17,8 +17,13 @@
 - Uncompress to root folder :
 ```
 cd LinearStyleTransfer
-unzip models.zip
-rm models.zip
+unzip models_A.zip
+unzip models_B.zip
+mkdir models
+mv models_A/* models/
+mv models_B/* models/
+rm models_A.zip
+rm models_B.zip
 ```
 
 #### Artistic style transfer
